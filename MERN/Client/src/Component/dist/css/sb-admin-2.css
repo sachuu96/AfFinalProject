@@ -9,6 +9,12 @@ body {
 #wrapper {
   width: 100%;
 }
+button{
+  margin:0 5px;
+}
+form button{
+  margin:0 10px 0 0;
+}
 
 .hide{
   display:none;

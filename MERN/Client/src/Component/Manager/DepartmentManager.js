@@ -351,7 +351,7 @@ class DepartmentManager extends Component {
                                                                 <input id="name"  className="form-control" placeholder="@Chemical"/>
                                                             </div>
 
-                                                            <button type="button" className="btn btn-default" onClick={()=>{this.addDepartment(document.getElementById('name').value)}}>Submit</button>
+                                                            <button type="button" className="btn btn-success" onClick={()=>{this.addDepartment(document.getElementById('name').value)}}>Submit</button>
                                                             <button type="reset" className="btn btn-default">Reset</button>
 
                                                             <div className="form-group">
@@ -364,9 +364,10 @@ class DepartmentManager extends Component {
                                                                         )
                                                                     }
                                                                 </select>
-                                                                <button type="button" onClick={()=>{this.updateDepartment(document.getElementById('id').value,document.getElementById('name').value)}} className="btn btn-default">Update Button</button>
-                                                                <button type="button" onClick={()=>{this.deleteDepartment(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
+
                                                             </div>
+                                                            <button type="button" onClick={()=>{this.updateDepartment(document.getElementById('id').value,document.getElementById('name').value)}} className="btn btn-success">Update</button>
+                                                            <button type="button" onClick={()=>{this.deleteDepartment(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
                                                         </form>
                                                     </div>
 

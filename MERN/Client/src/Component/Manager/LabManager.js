@@ -256,9 +256,10 @@ class LabManager extends Component {
                                                                 )
                                                             }
                                                         </select>
-                                                        <button type="button" onClick={()=>{this.updateLab(document.getElementById('id').value,document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}  className="btn btn-default">Update</button>
-                                                        <button type="button" onClick={()=>{this.deleteLab(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
-                                                    </div>
+                                                     </div>
+                                                    <button type="button" onClick={()=>{this.updateLab(document.getElementById('id').value,document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}  className="btn btn-default">Update</button>
+                                                    <button type="button" onClick={()=>{this.deleteLab(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
+
                                                 </form>
                                             </div>
                                         </div>

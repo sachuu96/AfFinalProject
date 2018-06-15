@@ -279,8 +279,8 @@ class Departments extends Component {
         = "form-control input-sm"
         placeholder = ""
         aria-controls = "dataTables-example" /> </label>
-                <button type="button" onClick={()=>{this.showHideToggle(document.getElementById('search').value)}} className="btn btn-default">Search</button>
-                <a className="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/depmanager"><button type="submit" className="btn btn-default">Manage Details</button></a>
+                <button type="button" onClick={()=>{this.showHideToggle(document.getElementById('search').value)}} className="btn btn-info">Search</button>
+                <a className="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/depmanager"><button type="submit" className="btn btn-primary">Manage Details</button></a>
 
             </div>
 

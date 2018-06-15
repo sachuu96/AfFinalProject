@@ -158,8 +158,8 @@ class Laboratories extends Component {
     <div class="panel-body">
         <div id="dataTables-example_filter" class="dataTables_filter">
         <label>Search:<input type="search" id="search" class="form-control input-sm" placeholder="" aria-controls="dataTables-example"/></label>
-            <button type="button" onClick={()=>{this.getSearchDetails(document.getElementById('search').value)}} className="btn btn-default">Search</button>
-            <a className="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/labmanager"><button type="submit" className="btn btn-default">Manage Details</button></a>
+            <button type="button" onClick={()=>{this.getSearchDetails(document.getElementById('search').value)}} className="btn btn-info">Search</button>
+            <a className="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/labmanager"><button type="submit" className="btn btn-primary">Manage Details</button></a>
 
         </div>
 

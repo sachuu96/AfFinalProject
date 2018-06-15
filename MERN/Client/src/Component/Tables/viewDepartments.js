@@ -26,7 +26,7 @@ class viewDepartments extends Component{
             <div>
                 <table width="100%" className="table table-striped  table-hover" id="dataTables-example">
                     <thead>
-                    <tr>
+                    <tr class="info">
                         <th>Department ID</th>
                         <th>Department Name</th>
 
@@ -35,7 +35,7 @@ class viewDepartments extends Component{
                     <tbody>
                     {this.departments.map(item=>
 
-                        <tr className="odd gradeX" key ={item._id}>
+                        <tr className="odd gradeX active" key ={item._id}>
                             <td>{item._id}</td>
                             <td>{item.department_name}</td>
                         </tr>

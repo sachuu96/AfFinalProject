@@ -253,9 +253,10 @@ class TypeManager extends Component {
                                                                 )
                                                             }
                                                         </select>
-                                                        <button type="button"  onClick={()=>{this.updateType((document.getElementById('id').value),document.getElementById('type_name').value)}} className="btn btn-default" >Update Button</button>
-                                                        <button type="button" onClick={()=>{this.deleteType(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
-                                                    </div>
+                                                        </div>
+                                                    <button type="button"  onClick={()=>{this.updateType((document.getElementById('id').value),document.getElementById('type_name').value)}} className="btn btn-default" >Update</button>
+                                                    <button type="button" onClick={()=>{this.deleteType(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
+
                                                 </form>
                                             </div>
 

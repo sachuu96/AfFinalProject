@@ -52,7 +52,7 @@ class viewLabTypes extends Component{
             <div>
                 <table  width="100%" className="table table-striped  table-hover" id="dataTables-example">
                     <thead>
-                    <tr>
+                    <tr class="info">
                         <th>Laboratory ID</th>
                         <th>Laboratory Name</th>
 
@@ -61,7 +61,7 @@ class viewLabTypes extends Component{
                     <tbody>
                     {this.types.map(item=>
 
-                        <tr className="odd gradeX" key ={item._id}>
+                        <tr className="odd gradeX active" key ={item._id}>
                             <td id="id">{item._id}</td>
                             <td id="name">{item.lab_type_name}</td>
 
