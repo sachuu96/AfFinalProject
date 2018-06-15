@@ -26,10 +26,31 @@ class Departments extends Component {
         }).then(data =>{
             this.setState({allDepartments : data.data});
         }).catch(err=>{
-            alert('failed to upload Departments:'+err);
+            alert('Failed to Load Departments:'+err);
+            window.location('http://localhost:3000/departments');
         })
         console.log('getAllMethod called');
     }
+
+    getSearchDetails(id){
+        fetch('http://localhost:8081/department/'+id , {
+            method:'GET',
+            headers:{'Content-Type':'application/json'}
+        }).then(res=>{
+            return res.json();
+        }).then(data =>{
+            this.setState({allDepartments : data.data});
+        }).catch(err=>{
+            alert('Failed to Search Departments:'+err);
+            this.constructor();
+        })
+        console.log('search called');
+    }
+
+    showHideToggle(id){
+        this.getSearchDetails(id);
+    }
+
 
     setSelectedDepartment(type){
         var newarr = this.state.selectedDepartment.slice();
@@ -126,27 +147,7 @@ class Departments extends Component {
             < li
     class
         = "sidebar-search" >
-            < div
-    class
-        = "input-group custom-search-form" >
-            < input
-        type = "text"
-    class
-        = "form-control"
-        placeholder = "Search..." />
-            < span
-    class
-        = "input-group-btn" >
-            < button
-    class
-        = "btn btn-default"
-        type = "button" >
-            < i
-    class
-        = "fa fa-search" > </i>
-            </button>
-            </span>
-            </div>
+
             </li>
             < li >
             < a
@@ -273,19 +274,18 @@ class Departments extends Component {
         = "dataTables_filter" >
             < label > Search
     :<
-        input
+        input id="search"
         type = "search"
     class
         = "form-control input-sm"
         placeholder = ""
         aria-controls = "dataTables-example" /> </label>
-                <button type="submit" className="btn btn-default">Search</button>
+                <button type="button" onClick={()=>{this.showHideToggle(document.getElementById('search').value)}} className="btn btn-default">Search</button>
                 <a className="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/depmanager"><button type="submit" className="btn btn-default">Manage Details</button></a>
 
             </div>
 
-
-            <div>
+            <div id="view">
                 <ViewDepartment  allDepartment={this.state.allDepartments} selectedDepartment = {department => this.setSelectedDepartment(department)}/>
             </div>
 

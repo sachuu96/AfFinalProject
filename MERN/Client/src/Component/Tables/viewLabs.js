@@ -38,7 +38,7 @@ class viewLabs extends Component{
                         <th>Email</th>
                         <th>Contact 1</th>
                         <th>Contact 2</th>
-                        <th></th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -55,9 +55,7 @@ class viewLabs extends Component{
                                 <td>{item.email}</td>
                                 <td>{item.contact_1}</td>
                                 <td>{item.contact_2}</td>
-                                <td>
-                                    <button type="button" className="btn btn-primary">Edit</button>
-                                </td>
+
                             </tr>
                         )}
 

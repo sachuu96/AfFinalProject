@@ -6,6 +6,24 @@ import '../vendor/font-awesome/css/font-awesome.min.css';
 import '../dist/css/sb-admin-2.css';
 
 class DepartmentManager extends Component {
+
+    constructor(props){
+        super(props);
+        this.state={
+            dep:[]
+        }
+        this.getDeps();
+    }
+
+    getDeps(){
+        axios.get('http://localhost:8081/department/').then(res=>{
+            console.log(res);
+            this.setState({
+                dep:res.data.data
+            });
+            console.log(this.state.dep);
+        });
+    }
     addDepartment(name) {
         var data = {"department_name":name};
         console.log(data);
@@ -288,11 +306,11 @@ class DepartmentManager extends Component {
                                                                 <label>Select Department Id</label>
                                                                 <select id="id" className="form-control">
                                                                     <option>Select Id Before Updating</option>
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                    <option>5</option>
+                                                                    {
+                                                                        this.state.dep.map(department =>
+                                                                            <option>{department._id}</option>
+                                                                        )
+                                                                    }
                                                                 </select>
                                                                 <button type="button" onClick={()=>{this.updateDepartment(document.getElementById('id').value,document.getElementById('name').value)}} className="btn btn-default">Update Button</button>
                                                             </div>

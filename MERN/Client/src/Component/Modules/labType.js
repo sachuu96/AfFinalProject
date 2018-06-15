@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../vendor/bootstrap/css/bootstrap.min.css';
 import '../vendor/metisMenu/metisMenu.min.css';
 import '../dist/css/sb-admin-2.css';
+import '../dist/css/table-css.css';
+
 import Viewtype from '../Tables/viewLabTypes';
 import axios from "axios/index";
 
@@ -30,9 +32,23 @@ class labType extends Component {
             this.setState({allTypes : data.data});
 
         }).catch(err=>{
-            alert('failed to upload Types:'+err);
+            alert('Failed to Load Types:'+err);
         })
         console.log('getAllMethod called');
+    }
+
+    getSearchDetails(id){
+        fetch('http://localhost:8081/type/'+id, {
+            method:'GET',
+            headers:{'Content-Type':'application/json'}
+        }).then(res=>{
+            return res.json();
+        }).then(data =>{
+            this.setState({allTypes : data.data});
+
+        }).catch(err=>{
+            alert('Failed to Search Types:'+err);
+        })
     }
 
     setSelectedType(type){
@@ -79,16 +95,7 @@ class labType extends Component {
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
         <ul class="nav" id="side-menu">
-        <li class="sidebar-search">
-        <div class="input-group custom-search-form">
-        <input type="text" class="form-control" placeholder="Search..."/>
-        <span class="input-group-btn">
-        <button class="btn btn-default" type="button">
-        <i class="fa fa-search"></i>
-        </button>
-        </span>
-        </div>
-        </li>
+
         <li>
         <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Lab Orders</a>
     </li>
@@ -152,8 +159,8 @@ class labType extends Component {
     </div>
     <div class="panel-body">
         <div id="dataTables-example_filter" class="dataTables_filter">
-        <label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="dataTables-example"/></label>
-            <button ype="submit" className="btn btn-default">Search</button>
+        <label>Search:<input id="search" type="search" class="form-control input-sm" placeholder="" aria-controls="dataTables-example"/></label>
+            <button type="button" onClick={()=>{this.getSearchDetails(document.getElementById('search').value)}} className="btn btn-default">Search</button>
             <a className="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/typemanager"><button type="submit" className="btn btn-default">Manage Details</button></a>
 
         </div>

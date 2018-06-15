@@ -6,6 +6,22 @@ import axios from "axios/index";
 
 
 class LabManager extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            labs:[]
+        }
+        this.getLabs();
+    }
+    getLabs(){
+        axios.get('http://localhost:8081/laboratory/').then(res=>{
+            console.log(res);
+            this.setState({
+                labs:res.data.data
+            });
+            console.log(this.state.labs);
+        });
+    }
 
     addLab(name,type,department,count,incharge,location,email,num1,num2) {
 
@@ -200,11 +216,11 @@ class LabManager extends Component {
                                                         <label>Select Laboratory Id</label>
                                                         <select id="id" className="form-control">
                                                             <option>Select Id Before Updating</option>
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
+                                                            {
+                                                                this.state.labs.map(labpratory =>
+                                                                    <option>{labpratory._id}</option>
+                                                                )
+                                                            }
                                                         </select>
                                                         <button type="button" onClick={()=>{this.updateLab(document.getElementById('id').value,document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}  className="btn btn-default">Update Button</button>
                                                     </div>
