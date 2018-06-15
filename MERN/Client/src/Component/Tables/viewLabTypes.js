@@ -15,7 +15,14 @@ class viewLabTypes extends Component{
         console.log('will receive called');
     }
 
+    edit(edit,update,name){
+        edit.classList.add("hide");
+        update.classList.add("show");
+        name.contentEditable="true";
+    }
+    update(){
 
+    }
 
 
     render(){
@@ -34,10 +41,14 @@ class viewLabTypes extends Component{
                     {this.types.map(item=>
 
                         <tr className="odd gradeX" key ={item._id}>
-                            <td>{item._id}</td>
-                            <td>{item.lab_type_name}</td>
+                            <td id="id">{item._id}</td>
+                            <td id="name">{item.lab_type_name}</td>
                             <td>
-                                <button type="button" className="btn btn-primary">Edit</button>
+                                <button id="edit" type="button"  onClick={()=>{this.edit(document.getElementById('edit'),document.getElementById('update'),document.getElementById('name'))}} className="btn btn-primary">Edit</button>
+                                <button id="update" type="button"  className="btn btn-danger hide ">Update</button>
+                            </td>
+                            <td>
+                                <button type="button" className="btn btn-primary">Delete</button>
                             </td>
                         </tr>
                     )}

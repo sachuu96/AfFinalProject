@@ -93,9 +93,7 @@ class labType extends Component {
     <div class="navbar-default sidebar" role="navigation">
         <div class="sidebar-nav navbar-collapse">
         <ul class="nav" id="side-menu">
-        <li class="sidebar-search">
-       
-        </li>
+
         <li>
         <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Lab Orders</a>
     </li>
