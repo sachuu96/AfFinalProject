@@ -7,6 +7,57 @@ import axios from "axios/index";
 
 class TypeManager extends Component {
 
+    constructor(props){
+        super(props);
+        this.state={
+            types:[],
+            type_name:''
+        }
+        this.getTypes();
+
+    }
+
+
+
+
+
+    searchType(id){
+        var tname;
+
+        fetch('http://localhost:8081/type/'+id , {
+            method:'GET',
+            headers:{'Content-Type':'application/json'}
+        }).then(response=>{
+            return response.json();
+
+        }).then(data=>{
+
+            for( var type of data.data){
+                tname=type.lab_type_name;
+
+            }
+
+            this.setState({
+                type_name:tname
+            })
+
+        }).catch(err=>{
+            alert(err);
+        })
+
+    }
+
+
+    getTypes(){
+        axios.get('http://localhost:8081/type/').then(res=>{
+            console.log(res);
+            this.setState({
+                types:res.data.data
+            });
+            console.log(this.state.types);
+        });
+    }
+
     addType(name) {
 
 
@@ -155,7 +206,7 @@ class TypeManager extends Component {
                                                     <h1>Add Laboratory Type</h1>
                                                     <div className="form-group">
                                                         <label>Type Name</label>
-                                                        <input id="type_name"  className="form-control" placeholder="@Chemical"/>
+                                                        <input id="type_name"  value={this.state.type_name} className="form-control" placeholder="@Chemical"/>
                                                     </div>
 
 
@@ -164,15 +215,15 @@ class TypeManager extends Component {
 
                                                     <div className="form-group">
                                                         <label>Select Type Id</label>
-                                                        <select id="id" className="form-control">
+                                                        <select onChange={()=>{this.searchType(document.getElementById('id').value)}} id="id" className="form-control">
                                                             <option>Select Id Before Updating</option>
-                                                            <option>1</option>
-                                                            <option>2</option>
-                                                            <option>3</option>
-                                                            <option>4</option>
-                                                            <option>5</option>
+                                                            {
+                                                                this.state.types.map(types =>
+                                                                    <option>{types._id}</option>
+                                                                )
+                                                            }
                                                         </select>
-                                                        <button type="button" onClick={()=>{this.updateType((document.getElementById('id').value),document.getElementById('type_name').value)}} className="btn btn-default" >Update Button</button>
+                                                        <button type="button"  onClick={()=>{this.updateType((document.getElementById('id').value),document.getElementById('type_name').value)}} className="btn btn-default" >Update Button</button>
                                                     </div>
                                                 </form>
                                             </div>
