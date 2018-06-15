@@ -243,8 +243,8 @@ class LabManager extends Component {
                                                     </div>
 
 
-                                                    <button type="button" className="btn btn-default" onClick={()=>{this.addLab(document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}>Submit</button>
-                                                    <button type="reset" className="btn btn-default">Reset</button>
+                                                    <button type="button" className="btn btn-success" onClick={()=>{this.addLab(document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}>Submit</button>
+                                                    <button type="reset" className="btn btn-info">Reset</button>
 
                                                     <div className="form-group">
                                                         <label>Select Laboratory Id</label>
@@ -257,8 +257,8 @@ class LabManager extends Component {
                                                             }
                                                         </select>
                                                      </div>
-                                                    <button type="button" onClick={()=>{this.updateLab(document.getElementById('id').value,document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}  className="btn btn-default">Update</button>
-                                                    <button type="button" onClick={()=>{this.deleteLab(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
+                                                    <button type="button" onClick={()=>{this.updateLab(document.getElementById('id').value,document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}  className="btn btn-success">Update</button>
+                                                    <button type="button" onClick={()=>{this.deleteLab(document.getElementById('id').value)}} className="btn btn-danger">Delete</button>
 
                                                 </form>
                                             </div>

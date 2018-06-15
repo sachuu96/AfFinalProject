@@ -240,8 +240,8 @@ class TypeManager extends Component {
                                                     </div>
 
 
-                                                    <button id="submit" type="button" className="btn btn-default" onClick={()=>{this.addType(document.getElementById('type_name').value)}}>Submit</button>
-                                                    <button type="reset" className="btn btn-default">Reset</button>
+                                                    <button id="submit" type="button" className="btn btn-success" onClick={()=>{this.addType(document.getElementById('type_name').value)}}>Submit</button>
+                                                    <button type="reset" className="btn btn-info">Reset</button>
 
                                                     <div className="form-group">
                                                         <label>Select Type Id</label>
@@ -254,8 +254,8 @@ class TypeManager extends Component {
                                                             }
                                                         </select>
                                                         </div>
-                                                    <button type="button"  onClick={()=>{this.updateType((document.getElementById('id').value),document.getElementById('type_name').value)}} className="btn btn-default" >Update</button>
-                                                    <button type="button" onClick={()=>{this.deleteType(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
+                                                    <button type="button"  onClick={()=>{this.updateType((document.getElementById('id').value),document.getElementById('type_name').value)}} className="btn btn-success" >Update</button>
+                                                    <button type="button" onClick={()=>{this.deleteType(document.getElementById('id').value)}} className="btn btn-danger">Delete</button>
 
                                                 </form>
                                             </div>
