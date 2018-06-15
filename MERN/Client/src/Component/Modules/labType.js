@@ -48,6 +48,7 @@ class labType extends Component {
 
         }).catch(err=>{
             alert('Failed to Search Types:'+err);
+            window.location.href='http://localhost:3000/labtype';
         })
     }
 

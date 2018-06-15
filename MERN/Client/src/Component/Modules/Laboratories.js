@@ -51,6 +51,7 @@ class Laboratories extends Component {
             this.setState({allLabs : data.data});
         }).catch(err=>{
             alert('Failed to Search Laboratories:'+err);
+            window.location.href='http://localhost:3000/laboratories';
         })
     }
 

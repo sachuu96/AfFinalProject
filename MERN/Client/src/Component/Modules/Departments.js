@@ -41,7 +41,7 @@ class Departments extends Component {
             this.setState({allDepartments : data.data});
         }).catch(err=>{
             alert('Failed to Search Departments:'+err);
-            this.constructor();
+            window.location.href='http://localhost:3000/departments';
         })
         console.log('search called');
     }
