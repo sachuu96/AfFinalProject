@@ -30,9 +30,23 @@ class labType extends Component {
             this.setState({allTypes : data.data});
 
         }).catch(err=>{
-            alert('failed to upload Types:'+err);
+            alert('Failed to Load Types:'+err);
         })
         console.log('getAllMethod called');
+    }
+
+    getSearchDetails(id){
+        fetch('http://localhost:8081/type/'+id, {
+            method:'GET',
+            headers:{'Content-Type':'application/json'}
+        }).then(res=>{
+            return res.json();
+        }).then(data =>{
+            this.setState({allTypes : data.data});
+
+        }).catch(err=>{
+            alert('Failed to Search Types:'+err);
+        })
     }
 
     setSelectedType(type){
@@ -152,8 +166,8 @@ class labType extends Component {
     </div>
     <div class="panel-body">
         <div id="dataTables-example_filter" class="dataTables_filter">
-        <label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="dataTables-example"/></label>
-            <button ype="submit" className="btn btn-default">Search</button>
+        <label>Search:<input id="search" type="search" class="form-control input-sm" placeholder="" aria-controls="dataTables-example"/></label>
+            <button type="button" onClick={()=>{this.getSearchDetails(document.getElementById('search').value)}} className="btn btn-default">Search</button>
             <a className="dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/typemanager"><button type="submit" className="btn btn-default">Manage Details</button></a>
 
         </div>

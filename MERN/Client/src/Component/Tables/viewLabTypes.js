@@ -5,7 +5,6 @@ import propTypes from 'prop-types';
 class viewLabTypes extends Component{
     static get propTypes(){
         types :propTypes.array;
-
     }
     constructor(props){
         super(props);
