@@ -6,6 +6,46 @@ import './vendor/font-awesome/css/font-awesome.min.css';
 
 
 class login extends Component {
+
+    constructor(props){
+        super(props);
+        this.state={
+            allUsers:[],
+        }
+        this.getUsers();
+
+    }
+
+
+    validateLogin(un,pw){
+        console.log('in');
+            {this.state.allUsers.map(allUsers=> {
+                if(un==allUsers.username && pw==allUsers.password){
+                    alert('Successfully Logged-in!!');
+                    window.location.href='http://localhost:3000/labtype';
+                }else{
+                    alert('Enter Valid Username and Password');
+                }
+                }
+            )}
+
+    }
+
+    getUsers(){
+        fetch('http://localhost:8081/user/' , {
+            method:'GET',
+            headers:{'Content-Type':'application/json'}
+        }).then(res=>{
+            return res.json();
+        }).then(data =>{
+            this.setState({allUsers : data.data});
+            //console.log(data.data);
+        }).catch(err=>{
+            alert('Failed to Load Users:'+err);
+        })
+        console.log('user get called');
+    }
+
     render() {
         return (
             <div class="container">
@@ -19,18 +59,16 @@ class login extends Component {
             <form role="form">
             <fieldset>
             <div class="form-group">
-            <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus/>
+            <input class="form-control" id="un" placeholder="username" type="text" required/>
         </div>
         <div class="form-group">
-            <input class="form-control" placeholder="Password" name="password" type="password" value=""/>
+            <input class="form-control" id="pw" placeholder="Password" type="password" required/>
             </div>
             <div class="checkbox">
-            <label>
-            <input name="remember" type="checkbox" value="Remember Me"/>Remember Me
-        </label>
+
         </div>
 
-        <a href="http://localhost:3000/labtype" class="btn btn-lg btn-success btn-block">Login</a>
+        <button type="button" onClick={()=>{this.validateLogin(document.getElementById('un').value,document.getElementById('pw').value)}} class="btn btn-lg btn-success btn-block">Login</button>
             </fieldset>
             </form>
             </div>

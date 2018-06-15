@@ -27,7 +27,6 @@ class Departments extends Component {
             this.setState({allDepartments : data.data});
         }).catch(err=>{
             alert('Failed to Load Departments:'+err);
-            window.location('http://localhost:3000/departments');
         })
         console.log('getAllMethod called');
     }
