@@ -3,7 +3,7 @@
  * @version 1.0.0
  * @author José Luis Ballesteros del Val
  */
-
+import jQuery from 'jquery';
 if (typeof jQuery === 'undefined') {
   throw new Error('FullTable requires jQuery library.');
 }

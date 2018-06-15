@@ -29,7 +29,7 @@ class viewDepartments extends Component{
                     <tr>
                         <th>Department ID</th>
                         <th>Department Name</th>
-                        <th></th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -38,9 +38,6 @@ class viewDepartments extends Component{
                         <tr className="odd gradeX" key ={item._id}>
                             <td>{item._id}</td>
                             <td>{item.department_name}</td>
-                            <td>
-                                <button type="button" className="btn btn-primary">Edit</button>
-                            </td>
                         </tr>
                     )}
 

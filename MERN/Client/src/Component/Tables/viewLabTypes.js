@@ -15,26 +15,47 @@ class viewLabTypes extends Component{
         console.log('will receive called');
     }
 
-    edit(edit,update,name){
-        edit.classList.add("hide");
-        update.classList.add("show");
-        name.contentEditable="true";
+   /*
+     onClick={()=>{this.edit(document.getElementById('id'),document.getElementById('edit'),document.getElementById('update'),document.getElementById('dataTables-example'))}}
+   edit(id,edit,update,name){
+
+
+        var tbl = name;
+
+        if(tbl != null) {
+            for (var i = 0; i < tbl.rows.length; i++) {
+
+
+                for (var j = 0; j < tbl.rows[i].cells.length; j++)
+
+
+                if(tbl.rows[i].cells[j] == id){
+                    console.log(tbl.rows[i].cells[j]);
+                    tbl.rows[i].cells[j].classList.add("hide");
+                    tbl.rows[i].cells[j].classList.add("show");
+                }
+
+            }
+
+        }
+
     }
+
     update(){
 
     }
-
+*/
 
     render(){
         this.types=this.props.allTypes;
         return (
             <div>
-                <table width="100%" className="table table-striped  table-hover" id="dataTables-example">
+                <table  width="100%" className="table table-striped  table-hover" id="dataTables-example">
                     <thead>
                     <tr>
                         <th>Laboratory ID</th>
                         <th>Laboratory Name</th>
-                        <th></th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -43,13 +64,7 @@ class viewLabTypes extends Component{
                         <tr className="odd gradeX" key ={item._id}>
                             <td id="id">{item._id}</td>
                             <td id="name">{item.lab_type_name}</td>
-                            <td>
-                                <button id="edit" type="button"  onClick={()=>{this.edit(document.getElementById('edit'),document.getElementById('update'),document.getElementById('name'))}} className="btn btn-primary">Edit</button>
-                                <button id="update" type="button"  className="btn btn-danger hide ">Update</button>
-                            </td>
-                            <td>
-                                <button type="button" className="btn btn-primary">Delete</button>
-                            </td>
+
                         </tr>
                     )}
 

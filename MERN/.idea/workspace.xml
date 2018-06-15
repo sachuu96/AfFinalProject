@@ -23,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewLabTypes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewLabTypes.js">
+      <file leaf-file-name="viewDepartments.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewDepartments.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="195">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -35,29 +35,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table-css.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/css/table-css.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sb-admin-2.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/css/sb-admin-2.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="viewLabs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewLabs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="119">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewLabTypes.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewLabTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,22 +100,24 @@
         <option value="$PROJECT_DIR$/Client/staticConfig.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewTypes.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Tables/sadas.js" />
-        <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewDepartments.js" />
-        <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewLabs.js" />
         <option value="$PROJECT_DIR$/back-end/Controllers/LabDepartmentsController/DepartmentController.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Manager/TypeManager.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Manager/LabManager.js" />
-        <option value="$PROJECT_DIR$/Client/src/Component/Manager/DepartmentManager.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Search/searchType.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Search/searchLabs.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Search/searchDepartment.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Modules/Laboratories.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Modules/Departments.js" />
-        <option value="$PROJECT_DIR$/Client/src/Component/Modules/labType.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/dist/css/sb-admin-2.css" />
-        <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewLabTypes.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/dist/js/table-script.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/dist/css/table-css.css" />
+        <option value="$PROJECT_DIR$/Client/src/Component/dist/js/jquery.fulltable.js" />
+        <option value="$PROJECT_DIR$/Client/src/index.js" />
+        <option value="$PROJECT_DIR$/Client/src/Component/Modules/labType.js" />
+        <option value="$PROJECT_DIR$/Client/src/Component/Manager/DepartmentManager.js" />
+        <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewDepartments.js" />
+        <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewLabs.js" />
+        <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewLabTypes.js" />
       </list>
     </option>
   </component>
@@ -136,7 +132,7 @@
     <handled-path value="$PROJECT_DIR$/back-end/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="38" />
     <option name="y" value="42" />
     <option name="width" value="1310" />
@@ -328,12 +324,12 @@
       <workItem from="1528982175315" duration="6345000" />
       <workItem from="1529034653356" duration="691000" />
       <workItem from="1529036308722" duration="8217000" />
-      <workItem from="1529045843798" duration="3758000" />
+      <workItem from="1529045843798" duration="10418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54816000" />
+    <option name="totallyTimeSpent" value="61476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -386,30 +382,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/js/new.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/labType.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2057">
@@ -610,16 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/DepartmentManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="175" column="30" lean-forward="true" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Controllers/LabTypeController.jsx" />
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/LabManager.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -631,26 +593,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/Route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Search/searchType.js" />
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Search/searchLabs.js" />
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Search/searchDepartment.js" />
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewDepartments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back-end/Controllers/LabDepartmentsController/DepartmentController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -668,30 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/Departments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/labType.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1247">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewLabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/css/sb-admin-2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -706,20 +627,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewLabTypes.js">
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/css/table-css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="178">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/css/jquery.fulltable.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/js/jquery.fulltable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/labType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/Departments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/dist/css/table-css.css">
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/DepartmentManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="272">
+          <caret line="310" column="99" selection-start-line="310" selection-start-column="99" selection-end-line="310" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/Route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewDepartments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewLabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Tables/viewLabTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import '../vendor/bootstrap/css/bootstrap.min.css';
 import '../vendor/metisMenu/metisMenu.min.css';
 import '../dist/css/sb-admin-2.css';
+import '../dist/css/table-css.css';
+
 import Viewtype from '../Tables/viewLabTypes';
 import axios from "axios/index";
 
