@@ -9,6 +9,12 @@ body {
 #wrapper {
   width: 100%;
 }
+.hide{
+  display:none;
+}
+.show{
+  display: block;
+}
 #page-wrapper {
   padding: 0 15px;
   min-height: 568px;

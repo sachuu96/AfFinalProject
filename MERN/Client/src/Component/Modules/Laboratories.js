@@ -157,8 +157,9 @@ class Laboratories extends Component {
         </div>
 
 
-        <ViewLab allLabs={this.state.allLabs} selectedLab = {lab => this.setSelectedLab(lab)}/>
-
+<div id="all-table" class="#">
+        <ViewLab  allLabs={this.state.allLabs} selectedLab = {lab => this.setSelectedLab(lab)}/>
+</div>
 
     </div>
     </div>
