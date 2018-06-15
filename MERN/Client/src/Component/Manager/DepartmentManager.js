@@ -10,9 +10,39 @@ class DepartmentManager extends Component {
     constructor(props){
         super(props);
         this.state={
-            dep:[]
+            dep:[],
+            dep_name:''
         }
         this.getDeps();
+    }
+
+    searchDep(id){
+        var dname;
+        if(id=="Select Id Before Updating"){
+            this.state.dep_name='';
+        }
+        else
+            fetch('http://localhost:8081/department/'+id , {
+                method:'GET',
+                headers:{'Content-Type':'application/json'}
+            }).then(response=>{
+                return response.json();
+
+            }).then(data=>{
+
+                for( var dep of data.data){
+                    dname=dep.department_name;
+
+                }
+
+                this.setState({
+                    dep_name:dname
+                })
+
+            }).catch(err=>{
+                alert(err);
+            })
+
     }
 
     getDeps(){
@@ -40,20 +70,42 @@ class DepartmentManager extends Component {
         })
     }
     updateDepartment(id,name){
+        if(name!="" & id!="Select Id Before Updating") {
+            var data = {"department_name": name};
+            fetch('http://localhost:8081/department/' + id, {
 
-        var data={"department_name":name};
-        fetch('http://localhost:8081/department/'+id,{
+                method: 'PUT',
+                body: JSON.stringify(data),
+                headers: {'Content-Type': 'application/json'}
+            }).then(response => {
+                return response.json();
+            }).then(data => {
+                alert('Department is Updated');
+            }).catch(err => {
+                alert(err);
+            })
+        }else {
+            alert('Fill out all the fields and Select a ID');
+        }
 
-            method:'PUT',
-            body:JSON.stringify(data),
-            headers:{'Content-Type':'application/json'}
-        }).then(response=>{
-            return response.json();
-        }).then(data=>{
-            alert('Department is Updated');
-        }).catch(err=>{
-            alert(err);
-        })
+    }
+
+    deleteDepartment(id){
+        if(id!="Select Id Before Updating") {
+            fetch('http://localhost:8081/department/' + id, {
+
+                method: 'DELETE',
+                headers: {'Content-Type': 'application/json'}
+            }).then(response => {
+                return response.json();
+            }).then(data => {
+                alert('Department is Deleted');
+            }).catch(err => {
+                alert(err);
+            })
+        }else {
+            alert('Select a ID for deleting!');
+        }
 
     }
 
@@ -296,7 +348,7 @@ class DepartmentManager extends Component {
                                                             <h1>Add Laboratory Department</h1>
                                                             <div className="form-group">
                                                                 <label>Department Name</label>
-                                                                <input id="name" className="form-control" placeholder="@Chemical"/>
+                                                                <input id="name"  className="form-control" placeholder="@Chemical"/>
                                                             </div>
 
                                                             <button type="button" className="btn btn-default" onClick={()=>{this.addDepartment(document.getElementById('name').value)}}>Submit</button>
@@ -304,7 +356,7 @@ class DepartmentManager extends Component {
 
                                                             <div className="form-group">
                                                                 <label>Select Department Id</label>
-                                                                <select id="id" className="form-control">
+                                                                <select onChange={()=>{this.searchDep(document.getElementById('id').value)}} id="id" className="form-control">
                                                                     <option>Select Id Before Updating</option>
                                                                     {
                                                                         this.state.dep.map(department =>
@@ -313,6 +365,7 @@ class DepartmentManager extends Component {
                                                                     }
                                                                 </select>
                                                                 <button type="button" onClick={()=>{this.updateDepartment(document.getElementById('id').value,document.getElementById('name').value)}} className="btn btn-default">Update Button</button>
+                                                                <button type="button" onClick={()=>{this.deleteDepartment(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
                                                             </div>
                                                         </form>
                                                     </div>

@@ -9,7 +9,8 @@ class LabManager extends Component {
     constructor(props){
         super(props);
         this.state={
-            labs:[]
+            labs:[],
+
         }
         this.getLabs();
     }
@@ -43,21 +44,54 @@ class LabManager extends Component {
 
 
     updateLab(id,name,type,department,count,incharge,location,email,num1,num2){
+        if(name!=""  & type!=""  &department!=""  &count!=""  &incharge!=""  &location!=""  &email!=""  &num1!=""  &num2!=""  & id!="Select Id Before Updating") {
 
-        var data={"lab_name":name,"lab_type":type,"department":department,"count":count,"incharge":incharge,"location":location,"email":email,"contact_1":num1,"contact_2":num2};
+            var data = {
+                "lab_name": name,
+                "lab_type": type,
+                "department": department,
+                "count": count,
+                "incharge": incharge,
+                "location": location,
+                "email": email,
+                "contact_1": num1,
+                "contact_2": num2
+            };
 
-            fetch('http://localhost:8081/laboratory/'+id,{
+            fetch('http://localhost:8081/laboratory/' + id, {
 
-                method:'PUT',
-                body:JSON.stringify(data),
-                headers:{'Content-Type':'application/json'}
-            }).then(response=>{
+                method: 'PUT',
+                body: JSON.stringify(data),
+                headers: {'Content-Type': 'application/json'}
+            }).then(response => {
                 return response.json();
-            }).then(data=>{
+            }).then(data => {
                 alert('Laboratory is Updated');
-            }).catch(err=>{
+            }).catch(err => {
                 alert(err);
             })
+        }else {
+            alert('Fill out all the fields and Select a ID');
+        }
+    }
+
+    deleteLab(id){
+        if(id!="Select Id Before Updating") {
+            fetch('http://localhost:8081/laboratory/' + id, {
+
+                method: 'DELETE',
+                headers: {'Content-Type': 'application/json'}
+            }).then(response => {
+                return response.json();
+            }).then(data => {
+                alert('Laboratory is Deleted');
+            }).catch(err => {
+                alert(err);
+            })
+        }else {
+            alert('Select a ID for deleting!');
+        }
+
     }
 
 
@@ -222,7 +256,8 @@ class LabManager extends Component {
                                                                 )
                                                             }
                                                         </select>
-                                                        <button type="button" onClick={()=>{this.updateLab(document.getElementById('id').value,document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}  className="btn btn-default">Update Button</button>
+                                                        <button type="button" onClick={()=>{this.updateLab(document.getElementById('id').value,document.getElementById('name').value,document.getElementById('type').value,document.getElementById('dep').value,document.getElementById('cou').value,document.getElementById('inch').value,document.getElementById('loc').value,document.getElementById('mail').value,document.getElementById('con1').value,document.getElementById('con2').value)}}  className="btn btn-default">Update</button>
+                                                        <button type="button" onClick={()=>{this.deleteLab(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
                                                     </div>
                                                 </form>
                                             </div>

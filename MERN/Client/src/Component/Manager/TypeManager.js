@@ -23,7 +23,10 @@ class TypeManager extends Component {
 
     searchType(id){
         var tname;
-
+        if(id=="Select Id Before Updating"){
+            this.state.type_name='';
+        }
+        else
         fetch('http://localhost:8081/type/'+id , {
             method:'GET',
             headers:{'Content-Type':'application/json'}
@@ -46,7 +49,10 @@ class TypeManager extends Component {
         })
 
     }
-
+    setTvalue(value){
+        console.log(value);
+        this.state.type_name+=value;
+    }
 
     getTypes(){
         axios.get('http://localhost:8081/type/').then(res=>{
@@ -77,22 +83,46 @@ class TypeManager extends Component {
     }
 
     updateType(id,name){
+    if(name!="" & id!="Select Id Before Updating") {
+        var data = {"lab_type_name": name};
+        fetch('http://localhost:8081/type/' + id, {
 
-        var data={"lab_type_name":name};
-            fetch('http://localhost:8081/type/'+id,{
-
-                method:'PUT',
-                body:JSON.stringify(data),
-                headers:{'Content-Type':'application/json'}
-            }).then(response=>{
-                return response.json();
-            }).then(data=>{
-                alert('Type is Updated');
-            }).catch(err=>{
-                alert(err);
-            })
+            method: 'PUT',
+            body: JSON.stringify(data),
+            headers: {'Content-Type': 'application/json'}
+        }).then(response => {
+            return response.json();
+        }).then(data => {
+            alert('Type is Updated');
+        }).catch(err => {
+            alert(err);
+        })
+    }else {
+        alert('Fill out all the fields and Select a ID');
+    }
 
     }
+
+
+    deleteType(id){
+        if(id!="Select Id Before Updating") {
+            fetch('http://localhost:8081/type/' + id, {
+
+                method: 'DELETE',
+                headers: {'Content-Type': 'application/json'}
+            }).then(response => {
+                return response.json();
+            }).then(data => {
+                alert('Type is Deleted');
+            }).catch(err => {
+                alert(err);
+            })
+        }else {
+            alert('Select a ID for deleting!');
+        }
+
+    }
+
 
     render() {
         return (
@@ -206,11 +236,11 @@ class TypeManager extends Component {
                                                     <h1>Add Laboratory Type</h1>
                                                     <div className="form-group">
                                                         <label>Type Name</label>
-                                                        <input id="type_name"  value={this.state.type_name} className="form-control" placeholder="@Chemical"/>
+                                                        <input id="type_name"  onChange={()=>{this.setTvalue(document.getElementById('type_name').value)}} className="form-control" placeholder="@Chemical"/>
                                                     </div>
 
 
-                                                    <button type="button" className="btn btn-default" onClick={()=>{this.addType(document.getElementById('type_name').value)}}>Submit</button>
+                                                    <button id="submit" type="button" className="btn btn-default" onClick={()=>{this.addType(document.getElementById('type_name').value)}}>Submit</button>
                                                     <button type="reset" className="btn btn-default">Reset</button>
 
                                                     <div className="form-group">
@@ -224,6 +254,7 @@ class TypeManager extends Component {
                                                             }
                                                         </select>
                                                         <button type="button"  onClick={()=>{this.updateType((document.getElementById('id').value),document.getElementById('type_name').value)}} className="btn btn-default" >Update Button</button>
+                                                        <button type="button" onClick={()=>{this.deleteType(document.getElementById('id').value)}} className="btn btn-default">Delete</button>
                                                     </div>
                                                 </form>
                                             </div>
