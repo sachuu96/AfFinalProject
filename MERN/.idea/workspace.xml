@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Departments.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/Departments.js">
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Client/src/Component/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="47" />
+            <state relative-caret-position="127">
+              <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -26,35 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="labType.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/labType.js">
+      <file leaf-file-name="LabManager.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/LabManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="76" column="68" selection-start-line="76" selection-start-column="68" selection-end-line="76" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Laboratories.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/Laboratories.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/logout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-end-line="19" selection-end-column="22" />
+            <state relative-caret-position="195">
+              <caret line="248" column="2" selection-start-line="248" selection-start-column="2" selection-end-line="248" selection-end-column="2" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -65,18 +41,17 @@
       <file leaf-file-name="DBConfig.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bback-end/DBSchema/DBConfig.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306" />
+            <state relative-caret-position="221">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="17" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client/src/Component/login.js">
+      <file leaf-file-name="Route.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bback-end/Route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -93,14 +68,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>port</find>
-      <find />
+      <find>data - toggle</find>
       <find>input</find>
-      <find />
+      <find>lab ord</find>
       <find>fa-dashboard</find>
     </findStrings>
     <dirStrings>
-      <dir />
-      <dir />
+      <dir>C:\Users\Ramesh\Desktop\AF Project\LabAFfinal</dir>
+      <dir>C:\Users\Ramesh\Desktop\AF Project\LabAFfinal\AfFinalProject\MERN\back-end</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -145,13 +120,13 @@
         <option value="$PROJECT_DIR$/Client/src/Component/Tables/viewLabTypes.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/dist/css/sb-admin-2.css" />
         <option value="$PROJECT_DIR$/Client/src/Component/Manager/DepartmentManager.js" />
-        <option value="$PROJECT_DIR$/Client/src/Component/Manager/LabManager.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Manager/TypeManager.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/logout.js" />
         <option value="$PROJECT_DIR$/Client/src/logo.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Modules/Departments.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Modules/labType.js" />
         <option value="$PROJECT_DIR$/Client/src/Component/Modules/Laboratories.js" />
+        <option value="$PROJECT_DIR$/Client/src/Component/Manager/LabManager.js" />
       </list>
     </option>
   </component>
@@ -166,7 +141,7 @@
     <handled-path value="$PROJECT_DIR$/bback-end/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="38" />
     <option name="y" value="42" />
     <option name="width" value="1310" />
@@ -221,7 +196,24 @@
               <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Component" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MERN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MERN" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Component" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MERN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MERN" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Component" type="462c0819:PsiDirectoryNode" />
+              <item name="Manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,18 +280,17 @@
       <workItem from="1529045843798" duration="10762000" />
       <workItem from="1529064082063" duration="11796000" />
       <workItem from="1529079372801" duration="889000" />
-      <workItem from="1529122092155" duration="2702000" />
+      <workItem from="1529122092155" duration="4426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77207000" />
+    <option name="totallyTimeSpent" value="78931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19667171" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19667171" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50832075" side_tool="true" visible="true" weight="0.32954547" />
@@ -308,7 +299,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Mongo Explorer" order="3" weight="0.32980332" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49167928" visible="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49167928" visible="true" weight="0.32954547" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -346,16 +337,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/labType.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
@@ -547,55 +528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/DepartmentManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="356" column="88" lean-forward="true" selection-start-line="356" selection-start-column="88" selection-end-line="356" selection-end-column="88" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/LabManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="246" column="96" selection-start-line="246" selection-start-column="96" selection-end-line="246" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/TypeManager.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="243" column="96" selection-start-line="243" selection-start-column="96" selection-end-line="243" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bback-end/DBSchema/DBConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client/src/Component/logout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-end-line="19" selection-end-column="22" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -634,8 +570,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client/src/Component/Modules/Laboratories.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="333">
           <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/logout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/DepartmentManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="356" column="88" lean-forward="true" selection-start-line="356" selection-start-column="88" selection-end-line="356" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bback-end/Route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bback-end/DBSchema/DBConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client/src/Component/Manager/LabManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="248" column="2" selection-start-line="248" selection-start-column="2" selection-end-line="248" selection-end-column="2" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
