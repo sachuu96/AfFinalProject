@@ -8,11 +8,15 @@ import axios from "axios/index";
 class LabManager extends Component {
     constructor(props){
         super(props);
-        this.state={
-            labs:[],
+        this.state= {
+            labs: [],
+            deps: [],
+            types: []
 
         }
         this.getLabs();
+        this.getDeps();
+        this.getTypes();
     }
     getLabs(){
         axios.get('http://localhost:8081/laboratory/').then(res=>{
@@ -21,6 +25,24 @@ class LabManager extends Component {
                 labs:res.data.data
             });
             console.log(this.state.labs);
+        });
+    }
+    getDeps(){
+        axios.get('http://localhost:8081/department/').then(res=>{
+            console.log(res);
+            this.setState({
+                deps:res.data.data
+            });
+            console.log(this.state.deps);
+        });
+    }
+    getTypes(){
+        axios.get('http://localhost:8081/type/').then(res=>{
+            console.log(res);
+            this.setState({
+                types:res.data.data
+            });
+            console.log(this.state.types);
         });
     }
 
@@ -211,11 +233,25 @@ class LabManager extends Component {
                                                     </div>
                                                     <div className="form-group">
                                                         <label>Laboratory Type</label>
-                                                        <input id="type" className="form-control" placeholder="@Gas"/>
+                                                        <select id="type" className="form-control">
+                                                            <option>Select Lab Type</option>
+                                                            {
+                                                                this.state.types.map(types =>
+                                                                    <option>{types.lab_type_name}</option>
+                                                                )
+                                                            }
+                                                        </select>
                                                     </div>
                                                     <div className="form-group">
                                                         <label>Department</label>
-                                                        <input id="dep" className="form-control" placeholder="@Biology"/>
+                                                        <select id="dep" className="form-control">
+                                                            <option>Select Department</option>
+                                                            {
+                                                                this.state.deps.map(departments =>
+                                                                    <option>{departments.department_name}</option>
+                                                                )
+                                                            }
+                                                        </select>
                                                     </div>
                                                     <div className="form-group">
                                                         <label>Count</label>
