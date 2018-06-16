@@ -3,6 +3,7 @@ import '../vendor/bootstrap/css/bootstrap.min.css';
 import '../vendor/metisMenu/metisMenu.min.css';
 import '../dist/css/sb-admin-2.css';
 import '../dist/css/table-css.css';
+import LogOut from '../logout';
 
 import Viewtype from '../Tables/viewLabTypes';
 import axios from "axios/index";
@@ -73,24 +74,16 @@ class labType extends Component {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Digital Pluz</a>
+        <a class="navbar-brand" href="index.html"> HIS.LK LABORATORY</a>
     </div>
 
     <ul class="nav navbar-top-links navbar-right">
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-        </a>
-        <ul class="dropdown-menu dropdown-user">
-        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-    </li>
-    <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-    </li>
-    <li class="divider"></li>
-        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-    </li>
-    </ul>
-    </li>
+        <li className="dropdown">
+            <a className="dropdown-toggle" href="#">
+                <LogOut/>
+            </a>
+
+        </li>
     </ul>
 
     <div class="navbar-default sidebar" role="navigation">

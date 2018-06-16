@@ -5,6 +5,8 @@ import '../vendor/metisMenu/metisMenu.min.css';
 import '../vendor/font-awesome/css/font-awesome.min.css';
 import '../dist/css/sb-admin-2.css';
 import ViewDepartment from '../Tables/viewDepartments';
+import LogOut from '../logout';
+
 
 class Departments extends Component {
     constructor(props){
@@ -88,8 +90,7 @@ class Departments extends Component {
             < a
     class
         = "navbar-brand"
-        href = "index.html" > Digital
-        Pluz </a>
+        href = "index.html" > HIS.LK LABORATORY</a>
         </div>
 
         < ul
@@ -101,34 +102,11 @@ class Departments extends Component {
             < a
     class
         = "dropdown-toggle"
-        data-toggle = "dropdown"
+        data-toggle = "#"
         href = "#" >
-            < i
-    class
-        = "fa fa-user fa-fw" > </i> <i class="fa fa-caret-down"></i >
+                <LogOut/>
             </a>
-            < ul
-    class
-        = "dropdown-menu dropdown-user" >
-            < li > < a
-        href = "#" > < i
-    class
-        = "fa fa-user fa-fw" > </i> User Profile</a>
-        </li>
-        < li > < a
-        href = "#" > < i
-    class
-        = "fa fa-gear fa-fw" > </i> Settings</a>
-        </li>
-        < li
-    class
-        = "divider" > </li>
-            < li > < a
-        href = "login.html" > < i
-    class
-        = "fa fa-sign-out fa-fw" > </i> Logout</a>
-        </li>
-        </ul>
+
         </li>
         </ul>
 
